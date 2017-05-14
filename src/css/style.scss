@@ -210,6 +210,20 @@ section {
       color:  $site-color-1;
     }
   }
+  .image {
+    height: 35vh;
+    background-position: center;
+    // background-size: cover;
+    // &:after {
+    //   content: "";
+    //   padding-bottom: 100%;
+    //   display: block;
+    // }
+    &.laptop {
+      background-image: url('../assets/images/laptop.jpg');
+      margin-top: 25px;
+    }
+  }
 }
 
 #projects {
@@ -221,7 +235,7 @@ section {
       content: "";
       padding-bottom: 62%;
       display: block;
-      border: 1px solid $site-color-2;
+      // border: 1px solid $site-color-2;
       margin-bottom: 10px;
     }
     &.code-catcher {
@@ -241,6 +255,18 @@ section {
     margin-bottom: 40px;
   }
 }
+
+.bw {
+  transition: all 1s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  &:hover {
+    -webkit-filter: drop-shadow(8px 8px 10px $site-color-1);
+  }
+}
+
 
 footer {
   background-color: rgba(20, 20, 20, 1);
