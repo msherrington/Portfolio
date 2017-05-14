@@ -26,6 +26,7 @@ a {
 h2 {
   @extend .heading-styles;
   margin-top: 0;
+  margin-bottom: 20px;
   color: $site-color-1;
 }
 
@@ -113,7 +114,7 @@ section {
   // background-size: cover;
   .head {
     position: absolute;
-    top: 35%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
@@ -124,15 +125,19 @@ section {
       font-weight: 400;
       padding: 0;
       span#mark {
-        animation: fadein 5s;
-      //   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-      //  -moz-animation: fadein 3s; /* Firefox < 16 */
-      //   -ms-animation: fadein 3s; /* Internet Explorer */
-      //    -o-animation: fadein 3s; /* Opera < 12.1 */
+        animation: fadein 6s;
+        -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 6s; /* Firefox < 16 */
+        -ms-animation: fadein 6s; /* Internet Explorer */
+        -o-animation: fadein 6s; /* Opera < 12.1 */
       }
       span#surname {
-        animation: fadein 1s;
         color: $site-color-2;
+        animation: fadein 1s;
+        -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+        -o-animation: fadein 1s; /* Opera < 12.1 */
       }
       #g {
         font-family: 'Lato', sans-serif;
@@ -141,14 +146,20 @@ section {
       }
     }
     h3 {
-      animation: fadein 7s;
+      animation: fadein 8s;
+      -webkit-animation: fadein 8s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 8s; /* Firefox < 16 */
+      -ms-animation: fadein 8s; /* Internet Explorer */
+      -o-animation: fadein 8s; /* Opera < 12.1 */
       pre {
         color: $site-color-1;
         font-family: inherit;
         font-size: 40px;
         font-weight: 200;
         margin: 0 auto;
-        margin-top: -50px;
+        margin-top: -30px;
+        background-color: $white;
+        border: 0;
       }
     }
   }
@@ -156,7 +167,7 @@ section {
 
 #arrow {
   position: absolute;
-  top: 75%;
+  top: 90%;
   transform: translate(-50%, -50%);
   animation: arrowfadein 4s;
   opacity: 0.2;
@@ -172,7 +183,7 @@ section {
   }
   .image {
     height: 35vh;
-    // background-position: center;
+    background-position: center;
     // background-size: cover;
     // &:after {
     //   content: "";
@@ -181,6 +192,7 @@ section {
     // }
     &.keyboard {
       background-image: url('../assets/images/keyboard.jpg');
+      margin-top: 25px;
     }
   }
 }
@@ -203,21 +215,30 @@ section {
 #projects {
   .image {
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     &:after {
       content: "";
-      padding-bottom: 100%;
+      padding-bottom: 62%;
       display: block;
+      border: 1px solid $site-color-2;
+      margin-bottom: 10px;
     }
-    &.image-one {
-      background-image: url('../assets/images/image-one.jpg');
+    &.code-catcher {
+      background-image: url('../assets/images/codecatcher.png');
     }
-    &.image-two {
-      background-image: url('../assets/images/image-two.jpg');
+    &.sip-advisor {
+      background-image: url('../assets/images/sipadvisor.png');
     }
-    &.image-three {
-      background-image: url('../assets/images/image-three.jpg');
+    &.speak-easy {
+      background-image: url('../assets/images/speakeasy.png');
     }
+    &.meet-app {
+      background-image: url('../assets/images/meetapp.png');
+    }
+  }
+  .col-sm-6 {
+    margin-bottom: 40px;
   }
 }
 
@@ -283,7 +304,7 @@ footer {
         li {
           display: block;
           float: none;
-          text-align: right;
+          text-align: left;
           &.menu {
             display: block;
           }
