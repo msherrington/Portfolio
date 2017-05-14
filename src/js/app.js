@@ -2,10 +2,12 @@ $(() => {
   const $header = $('header');
   const $window = $(window);
   const $links = $('nav a');
+  const $arrow = $('#arrow');
   const $menu = $('.menu');
 
   $window.scroll(updateHeader).trigger('scroll');
   $links.on('click', scrollToSection);
+  $arrow.on('click', scrollToSection);
   $menu.on('click', toggleMenu);
 
   function toggleMenu() {

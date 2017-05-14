@@ -4,10 +4,12 @@ $(function () {
   var $header = $('header');
   var $window = $(window);
   var $links = $('nav a');
+  var $arrow = $('#arrow');
   var $menu = $('.menu');
 
   $window.scroll(updateHeader).trigger('scroll');
   $links.on('click', scrollToSection);
+  $arrow.on('click', scrollToSection);
   $menu.on('click', toggleMenu);
 
   function toggleMenu() {
