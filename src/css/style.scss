@@ -81,6 +81,7 @@ header {
           &:hover {
             &:after {
               opacity: 1;
+              text-decoration: none;
             }
           }
         }
@@ -207,7 +208,10 @@ section {
     display: inline-block;
     &:hover {
       background-color: $site-color-2;
+      border: 2px solid $site-color-2;
       color:  $site-color-1;
+      text-decoration: none;
+
     }
   }
   .image {
@@ -254,26 +258,22 @@ section {
   .col-sm-6 {
     margin-bottom: 40px;
   }
-}
-
-.bw {
-  transition: all 1s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  &:hover {
-    -webkit-filter: drop-shadow(8px 8px 10px $site-color-1);
+  .pop {
+    transition: all 1s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    &:hover {
+      -webkit-filter: drop-shadow(8px 8px 12px $site-color-1);
+    }
   }
 }
 
-
-footer {
-  background-color: rgba(20, 20, 20, 1);
-  padding: 10px 0;
-  text-align: center;
-  color: white;
+#projects-link {
+  cursor: pointer;
 }
+
 
 
 @keyframes fadein {

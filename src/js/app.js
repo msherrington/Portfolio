@@ -3,11 +3,13 @@ $(() => {
   const $window = $(window);
   const $links = $('nav a');
   const $arrow = $('#arrow');
+  const $projects = $('#projects-link');
   const $menu = $('.menu');
 
   $window.scroll(updateHeader).trigger('scroll');
   $links.on('click', scrollToSection);
   $arrow.on('click', scrollToSection);
+  $projects.on('click', scrollToSection);
   $menu.on('click', toggleMenu);
 
   function toggleMenu() {
