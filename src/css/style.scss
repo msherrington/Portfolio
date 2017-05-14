@@ -44,6 +44,9 @@ header {
   }
 
   nav {
+    &.container {
+      margin: 0;
+    }
     ul {
       list-style: none;
       padding: 0;
@@ -67,6 +70,7 @@ header {
           @extend .heading-styles;
           font-weight: bold;
           position: relative;
+          text-decoration: none;
           &:after {
             content: "";
             height: 2px;
@@ -77,9 +81,13 @@ header {
             left: 0;
             opacity: 0;
             transition: opacity 0.2s ease;
+            text-decoration: none;
           }
           &:hover {
+            color: $white;
+            text-decoration: none;
             &:after {
+              color: $white;
               opacity: 1;
               text-decoration: none;
             }
@@ -94,7 +102,7 @@ section {
   width: 90%;
   margin: 0 auto;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 70px;
   padding-bottom: 80px;
   position: relative;
   border-bottom: 2px solid $site-color-2;
@@ -206,12 +214,13 @@ section {
     font-weight: bold;
     color: $site-color-1;
     display: inline-block;
+    text-decoration: none;
+    margin: 15px;
     &:hover {
-      background-color: $site-color-2;
-      border: 2px solid $site-color-2;
-      color:  $site-color-1;
+      background-color: $site-color-1;
+      border: 2px solid $site-color-1;
+      color:  $white;
       text-decoration: none;
-
     }
   }
   .image {
