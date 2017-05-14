@@ -1,8 +1,10 @@
-$(() => {
-  const $header = $('header');
-  const $window = $(window);
-  const $links = $('nav a');
-  const $menu = $('.menu');
+'use strict';
+
+$(function () {
+  var $header = $('header');
+  var $window = $(window);
+  var $links = $('nav a');
+  var $menu = $('.menu');
 
   $window.scroll(updateHeader).trigger('scroll');
   $links.on('click', scrollToSection);
@@ -13,8 +15,8 @@ $(() => {
   }
 
   function updateHeader() {
-    const bottomOfHeader = $header.offset().top + $header.height();
-    const viewportHeight = $window.height();
+    var bottomOfHeader = $header.offset().top + $header.height();
+    var viewportHeight = $window.height();
 
     if (bottomOfHeader >= viewportHeight) {
       $header.addClass('opaque');
@@ -24,14 +26,13 @@ $(() => {
   }
 
   function scrollToSection() {
-    const section = $(this).attr('href');
-    $('body').animate( {
+    var section = $(this).attr('href');
+    $('body').animate({
       scrollTop: $(section).offset().top
-    }, 1000, () => {
+    }, 1000, function () {
       if ($window.width() < 575) {
         $('.dropdown').slideToggle();
       }
     });
   }
-
 });
