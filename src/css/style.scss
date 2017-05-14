@@ -182,39 +182,15 @@ section {
 #about {
   p {
     font-size: 18px;
+    #projects-link {
+      cursor: pointer;
+    }
   }
   .image {
     height: 35vh;
     background-position: center;
     &.keyboard {
       background-image: url('../assets/images/keyboard.jpg');
-      margin-top: 25px;
-    }
-  }
-}
-
-#contact {
-  a {
-    @extend .heading-styles;
-    border: 2px solid $site-color-1;
-    padding: 5px 10px;
-    font-weight: bold;
-    color: $site-color-1;
-    display: inline-block;
-    text-decoration: none;
-    margin: 15px;
-    &:hover {
-      background-color: $site-color-1;
-      border: 2px solid $site-color-1;
-      color:  $white;
-      text-decoration: none;
-    }
-  }
-  .image {
-    height: 35vh;
-    background-position: center;
-    &.laptop {
-      background-image: url('../assets/images/laptop.jpg');
       margin-top: 25px;
     }
   }
@@ -248,7 +224,7 @@ section {
     margin-bottom: 40px;
   }
   .pop {
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -259,9 +235,87 @@ section {
   }
 }
 
-#projects-link {
-  cursor: pointer;
+#skills {
+  .image {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 20px 0px;
+    &:after {
+      content: "";
+      padding-bottom: 62%;
+      display: block;
+    }
+    &.image-one {
+      background-image: url('../assets/images/skills/html.png');
+    }
+    &.image-two {
+      background-image: url('../assets/images/skills/css3.png');
+    }
+    &.image-three {
+      background-image: url('../assets/images/skills/javascript.png');
+    }
+    &.image-four {
+      background-image: url('../assets/images/skills/jquery.gif');
+    }
+    &.image-five {
+      background-image: url('../assets/images/skills/git.jpg');
+    }
+    &.image-six {
+      background-image: url('../assets/images/skills/oauth.png');
+    }
+    &.image-seven {
+      background-image: url('../assets/images/skills/mongodb.png');
+    }
+    &.image-eight {
+      background-image: url('../assets/images/skills/expressjs.png');
+    }
+    &.image-nine {
+      background-image: url('../assets/images/skills/angularjs.png');
+    }
+    &.image-ten {
+      background-image: url('../assets/images/skills/nodejs.png');
+    }
+    &.image-eleven {
+      background-image: url('../assets/images/skills/rubyonrails.jpg');
+    }
+    &.image-twelve {
+      background-image: url('../assets/images/skills/jwt.png');
+    }
+  }
 }
+
+#contact {
+  h2 {
+    margin-top: 30px;
+  }
+  a {
+    @extend .heading-styles;
+    border: 2px solid $site-color-1;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: $site-color-1;
+    display: inline-block;
+    text-decoration: none;
+    margin: 15px;
+    &:hover {
+      background-color: $site-color-1;
+      border: 2px solid $site-color-1;
+      color:  $white;
+      text-decoration: none;
+    }
+  }
+  .image {
+    height: 35vh;
+    background-position: center;
+    &.laptop {
+      background-image: url('../assets/images/laptop.jpg');
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+  }
+}
+
 
 
 @keyframes fadein {
