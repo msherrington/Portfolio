@@ -265,7 +265,7 @@ section {
     -o-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     &:hover {
-      -webkit-filter: drop-shadow(8px 8px 12px $site-color-1);
+      -webkit-filter: drop-shadow(10px 10px 12px $site-color-1);
     }
   }
 }
