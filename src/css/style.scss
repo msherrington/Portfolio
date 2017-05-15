@@ -316,12 +316,12 @@ section {
   }
 }
 
-#404 {
+#error {
   .image {
     height: 35vh;
     background-position: center;
-    &.laptop {
-      background-image: url('../assets/images/laptop.jpg');
+    &.keyboard {
+      background-image: url('../assets/images/keyboard.jpg');
       margin-top: 25px;
     }
   }
