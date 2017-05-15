@@ -1,9 +1,9 @@
 function indexRoute(req, res) {
-  res.render('index');
+  res.render('static/index');
 }
 
 function notFoundRoute(req, res) {
-  res.render('404');
+  res.render('static/404');
 }
 
 module.exports = {
