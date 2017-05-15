@@ -316,6 +316,16 @@ section {
   }
 }
 
+#404 {
+  .image {
+    height: 35vh;
+    background-position: center;
+    &.laptop {
+      background-image: url('../assets/images/laptop.jpg');
+      margin-top: 25px;
+    }
+  }
+}
 
 
 @keyframes fadein {
