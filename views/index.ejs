@@ -4,27 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mark Sherrington's Portfolio</title>
-    <link rel="icon" href="assets/images/faviconRed.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
-    <script src="js/app.js" charset="utf-8"></script>
+    <% include ./partials/stylesheets %>
+    <% include ./partials/scripts %>
   </head>
   <body>
     <header>
-      <nav class="container">
-        <ul>
-          <li class="menu">&#9776;</li>
-          <div class="dropdown">
-            <li><a href="#welcome">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </div>
-        </ul>
-      </nav>
+      <% include ./partials/navbar %>
     </header>
     <main>
       <section id="welcome">
