@@ -378,6 +378,7 @@ section {
   to   { opacity: 0.2; }
 }
 
+
 // fix for viewport height on old iPads
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
   #welcome {
