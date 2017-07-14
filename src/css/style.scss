@@ -380,16 +380,16 @@ section {
 
 
 // fix for viewport height on old iPads
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
-  #welcome {
-    height: 1024px;
-  }
-}
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
-  #welcome {
-    height: 768px;
-  }
-}
+// @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+//   #welcome {
+//     height: 1024px;
+//   }
+// }
+// @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+//   #welcome {
+//     height: 768px;
+//   }
+// }
 
 
 @media only screen and (max-width: 720px) {
@@ -417,7 +417,6 @@ section {
   .col-lg-2 {
     max-width: 45%;
     margin: 0 auto;
-
   }
   header {
     height: auto;
@@ -438,7 +437,6 @@ section {
     }
   }
 }
-
 
 
 @media only screen and (max-width: 575px) {
