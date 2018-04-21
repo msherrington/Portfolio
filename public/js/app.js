@@ -30,7 +30,7 @@ $(function () {
   }
 
   function scrollToSection() {
-    if ($window.width() < 575) {
+    if ($window.width() <= 720) {
       $('.dropdown').slideUp();
     }
     var section = $(this).attr('link');
