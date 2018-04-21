@@ -141,10 +141,11 @@ section {
         -ms-animation: fadein 1s;
         -o-animation: fadein 1s;
       }
-      #g {
-        font-family: 'Lato', sans-serif;
+      span#g {
+        font-family: 'Open Sans', sans-serif;
         font-size: 79px;
-        margin-right: 2px;
+        margin-right: 3px;
+        font-weight: 100;
       }
     }
     h3 {
