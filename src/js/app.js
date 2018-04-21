@@ -28,10 +28,10 @@ $(() => {
   }
 
   function scrollToSection() {
-    const section = $(this).attr('href');
-    $('body').animate( {
+    const section = $(this).attr('link');
+    $('html, body').animate( {
       scrollTop: $(section).offset().top
-    }, 1000, () => {
+    }, 1500, () => {
       if ($window.width() < 575) {
         $('.dropdown').slideToggle();
       }
