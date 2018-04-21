@@ -30,13 +30,12 @@ $(function () {
   }
 
   function scrollToSection() {
+    if ($window.width() < 575) {
+      $('.dropdown').slideUp();
+    }
     var section = $(this).attr('link');
     $('html, body').animate({
       scrollTop: $(section).offset().top
-    }, 1500, function () {
-      if ($window.width() < 575) {
-        $('.dropdown').slideToggle();
-      }
-    });
+    }, 1500);
   }
 });
